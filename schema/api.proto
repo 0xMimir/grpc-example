@@ -1,0 +1,13 @@
+syntax = "proto3";
+package api;
+
+service Api{
+    rpc HelloThere(Empty) returns (HelloThereResponse);
+}
+
+message Empty{
+}
+
+message HelloThereResponse{
+    string message = 1;
+}
